@@ -56,7 +56,7 @@ const BottomTabNavigator = () => {
               component={ProductsScreen}
               options={{
                 tabBarIcon: ({ color, size }) => (
-                  <Ionicons name="restaurant-outline" color={color} size={size} />
+                  <Ionicons name="bag-outline" color={color} size={size} />
                 ),
               }} />
             <Tab.Screen
@@ -64,7 +64,7 @@ const BottomTabNavigator = () => {
               component={ChatListScreen}
               options={{
                 tabBarIcon: ({ color, size }) => (
-                  <Ionicons name="film-outline" color={color} size={size} />
+                  <Ionicons name="chatbubble-ellipses-outline" color={color} size={size} />
                 ),
               }} />
             <Tab.Screen
@@ -72,7 +72,7 @@ const BottomTabNavigator = () => {
               component={ProfileScreen}
               options={{
                 tabBarIcon: ({ color, size }) => (
-                  <Ionicons name="storefront-outline" color={color} size={size} />
+                  <Ionicons name="person-outline" color={color} size={size} />
                 ),
               }} />
           </Tab.Navigator>
