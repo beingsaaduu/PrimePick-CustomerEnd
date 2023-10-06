@@ -1,5 +1,6 @@
 package com.primepick_customerend;
 
+import android.os.Bundle;   // This is required for avoidance of navigation crashes
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
@@ -14,6 +15,12 @@ public class MainActivity extends ReactActivity {
   @Override
   protected String getMainComponentName() {
     return "PrimePick_CustomerEnd";
+  }
+
+  // This is required for avoidance of navigation crashes
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(null);
   }
 
   /**
