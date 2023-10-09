@@ -17,7 +17,9 @@ const Tab = createBottomTabNavigator<TabParamsList>()
 
 const BottomTabNavigator = () => {
     return (
-        <Tab.Navigator screenOptions={({ route }) => ({
+        <Tab.Navigator 
+        initialRouteName="Chat"
+        screenOptions={({ route }) => ({
             headerShown: false,
             tabBarLabel: ({ color }) => {
               let label;
